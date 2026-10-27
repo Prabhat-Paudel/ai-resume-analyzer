@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+PyMuPDF
+reportlab
+email-validator
+pytest
