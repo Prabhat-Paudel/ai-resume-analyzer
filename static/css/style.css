@@ -1,0 +1,129 @@
+/* GENERAL */
+
+body {
+    background-color: #f4f7fb;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+
+/* AUTHENTICATION */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 30px 15px;
+}
+
+.auth-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #2563eb;
+    height: 100%;
+}
+
+.stat-card h5 {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-top: 15px;
+}
+
+
+/* QUICK ACTIONS */
+
+.dashboard-actions {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* TABLE */
+
+.table th {
+    color: #475569;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #f4f7fb;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 576px) {
+
+    .auth-card {
+        padding: 25px 20px;
+    }
+
+    .navbar-brand {
+        font-size: 17px;
+    }
+
+    .dashboard-container {
+        padding-top: 25px;
+    }
+
+}
