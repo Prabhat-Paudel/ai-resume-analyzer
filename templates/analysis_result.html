@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+
+{% block title %}Resume Analysis Result{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Resume Analysis Result</h1>
+
+    <h3>Uploaded Resume</h3>
+
+    <p>{{ resume.filename }}</p>
+
+    <hr>
+
+    <h2>Detected Skills</h2>
+
+    {% if resume.skills %}
+
+        <ul>
+            {% for skill in resume.skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+
+        <p>No skills were detected in your resume.</p>
+
+    {% endif %}
+
+    <hr>
+
+    <h2>Extracted Resume Text</h2>
+
+    <pre>{{ resume.extracted_text }}</pre>
+
+    <br>
+
+    <a href="{{ url_for('upload_resume') }}">
+        Upload Another Resume
+    </a>
+
+    <br><br>
+
+    <a href="{{ url_for('dashboard') }}">
+        Back to Dashboard
+    </a>
+
+</div>
+
+{% endblock %}
