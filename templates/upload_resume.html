@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+
+{% block title %}Upload Resume{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Upload Your Resume</h1>
+
+    <p>
+        Upload your resume in PDF format.
+        Our system will extract your information
+        and identify your skills.
+    </p>
+
+    <form
+        method="POST"
+        action="{{ url_for('upload_resume') }}"
+        enctype="multipart/form-data"
+    >
+
+        <div class="form-group">
+
+            <label for="resume">
+                Select Your Resume (PDF)
+            </label>
+
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,application/pdf"
+                required
+            >
+
+        </div>
+
+        <button type="submit">
+            Upload and Analyze
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="{{ url_for('dashboard') }}">
+        Back to Dashboard
+    </a>
+
+</div>
+
+{% endblock %}
